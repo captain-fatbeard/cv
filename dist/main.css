@@ -1,0 +1,18 @@
+body {
+  margin: 0; }
+
+section {
+  display: block;
+  width: 100%;
+  min-height: 400px; }
+
+header {
+  background-color: red; }
+
+.profile h2 {
+  margin: 10px 0; }
+
+.profile h4,
+.profile h5 {
+  margin: 0; }
+
