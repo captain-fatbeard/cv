@@ -4,8 +4,9 @@ $_color_bg_odd: rgba(239, 239, 239, 0.6);
 $_color_bg_even: rgba(218, 218, 218, 0.6);
 
 .work{
-    max-width: 800px;
-    margin: auto;
+    h2{
+        display: block;
+    }
     .item{
         display: flex;
         .heading{

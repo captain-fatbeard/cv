@@ -15,15 +15,15 @@ export default class Layout extends React.Component {
     return (
         <div>
             {/* <Header /> */}
-                {/* <section>
-                    <Profile />
-                </section> */}
                 <section>
-                    <Toolbox />
+                    <Profile />
                 </section>
-            {/* <section>
+            <section>
+                <Toolbox />
+            </section>
+            <section>
                 <Work />
-            </section> */}
+            </section>
         {/* <Footer /> */}
       </div>
     );

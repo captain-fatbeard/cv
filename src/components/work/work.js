@@ -5,6 +5,8 @@ export default class Work extends React.Component {
     render() {
         return (
             <div className="work">
+                <h2>work</h2>
+
                 <div className="item">
                     <div className="heading">
                         <span className="circle"></span>

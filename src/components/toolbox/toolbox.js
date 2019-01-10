@@ -7,36 +7,66 @@ export default class Toolbox extends React.Component {
         	<div className="toolbox">
             	<h2>toolbox</h2>
 
-				frontend
-					Bootstrap
-					ReactJS
-					Vue
-					JS
-					jquery
-				
-				backend
-					NodeJS
-					Laravel
-					Wordpress
+	        	<div className="container">
+					<div className="category">
+						<h4>Frontend</h4>
+						<ul>
+							<li>VueJS</li>
+							<li>ReactJS</li>
+							<li>Bootstrap</li>
+							<li>jquery</li>
+						</ul>
+					</div>
 
-				Git
+					<div className="category">
+						<h4>Backend</h4>
+						<ul>
+							<li>NodeJS</li>
+							<li>Laravel</li>
+							<li>Wordpress</li>
+						</ul>
+					</div>
+					
+					<div className="category">
+						<h4>Other services</h4>
+						<ul>
+							<li>Git</li>
+							<li>new relic</li>
+							<li>sentry</li>
+							<li>aws</li>
+						</ul>
+					</div>
 
-				Developer Tools
-					sass
-					webpack
-					grunt & gulp
+					<div className="category">
+						<h4>Developer Tools</h4>
+						<ul>
+							<li>sass</li>
+							<li>webpack</li>
+							<li>grunt & gulp</li>
+							<li>phpunit</li>
+						</ul>
+					</div>
 
-				Package Managers
-					NPM
-					Composer
-					Chocolatey
+					<div className="category">
+						<h4>Package Managers</h4>
+						<ul>
+							<li>NPM</li>
+							<li>Composer</li>
+							<li>Homebrew</li>
+							<li>Chocolatey</li>
+						</ul>
+					</div>
 
-				Languages
-					PHP
-					HTML
-					javascript
-
-                
+					<div className="category">
+						<h4>Languages</h4>
+						<ul>
+							<li>PHP</li>
+							<li>HTML</li>
+							<li>javascript</li>
+							<li>mysql</li>
+						</ul>
+					</div>            
+	        	</div>
         	</div>
     	);
 	}

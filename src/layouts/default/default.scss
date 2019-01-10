@@ -13,4 +13,10 @@ section{
     display: block;
     width: 100%;
     min-height: 400px;
+    margin: 0 0 20px 0;
+
+    >div{
+        max-width: 800px;
+        margin: auto;
+    }
 }
