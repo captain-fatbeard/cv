@@ -6,6 +6,9 @@ section {
   width: 100%;
   min-height: 400px; }
 
+.test {
+  color: red; }
+
 header {
   background-color: red; }
 

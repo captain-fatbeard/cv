@@ -21,7 +21,7 @@ module.exports = (env, argv) => {
         return {
             entry: "./src/app.js",
             output: {
-                path: path.resolve('dist'),
+                path: path.resolve('docs'),
                 filename: 'app.js'
             },
             module: {
@@ -50,7 +50,7 @@ module.exports = (env, argv) => {
         return {
             entry: "./src/app.js",
             output: {
-                path: path.resolve('dist'),
+                path: path.resolve('docs'),
                 filename: 'app.js'
             },
             module: {
