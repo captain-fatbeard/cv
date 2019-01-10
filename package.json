@@ -10,14 +10,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://bitbucket.org/fatbeard/project-r.git"
+        "url": "https://github.com/captain-fatbeard/cv"
     },
     "keywords": [
         "red"
     ],
     "author": "fatbeard",
     "license": "ISC",
-    "homepage": "https://bitbucket.org/fatbeard/project-r#readme",
+    "homepage": "https://captain-fatbeard.github.io/cv",
     "devDependencies": {
         "babel-core": "^6.26.3",
         "babel-loader": "^7.1.5",
