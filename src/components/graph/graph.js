@@ -3,6 +3,11 @@ import Chart from 'chart.js';
 import "./graph.scss"
 
 export default class Graph extends React.Component {
+    constructor() {
+        super();
+        this.state = { areasOfSkills: [] }
+    }
+
     componentDidMount() {
         let grapOptions = {
             elements: {
@@ -25,107 +30,95 @@ export default class Graph extends React.Component {
             }
         };
         
-        let skills = [];
-        skills.push({area:'language', label: 'HTML', val: 99});
-        skills.push({area:'language', label: 'PHP', val: 90});
-        skills.push({area:'language', label: 'mysql', val: 70});
-        skills.push({area:'language', label: 'javascript', val: 80});
-        skills.push({area:'language', label: 'css', val: 99});
-        skills.push({area:'frontend', label: 'ReactJS', val: 55});
-        skills.push({area:'frontend', label: 'Bootstrap', val: 95});
-        skills.push({area:'frontend', label: 'VueJS', val: 50});
-        skills.push({area:'frontend', label: 'jquery', val: 95});
-   
-        let labels = [];
-        let dataSetsLanguages = [];
-        let dataSetsFrontend = [];
-
-        for (let index = 0; index < skills.length; index++) {
-            labels.push(skills[index].label);
-
-            if (skills[index].area === 'language') {
-                dataSetsLanguages.push(skills[index].val);
-            } else {
-                dataSetsLanguages.push(0);
+        const skills = {
+            'languages': {
+                'backgroundColor': 'rgba(255, 99, 132, 0.1)',
+                'borderColor': 'rgb(255, 99, 132)',
+                'data': {
+                    'html': 99,
+                    'PHP': 90,
+                    'mysql': 70,
+                    'javascript': 80,
+                    'css': 99,
+                }
+            },
+            'Backend': {
+                'backgroundColor': 'rgba(255, 132, 99, 0.1)',
+                'borderColor': 'rgb(255, 132, 99)',
+                'data': {
+                    'NodeJS': 70,
+                    'Laravel': 90,
+                    'Wordpress': 90
+                }
+            },
+            'frontend': {
+                'backgroundColor': 'rgba(132, 99, 255, 0.1)',
+                'borderColor': 'rgb(132, 99, 255)',
+                'data': {
+                    'ReactJS': 55,
+                    'Bootstrap': 95,
+                    'VueJS': 50,
+                    'jquery': 95
+                }
             }
-            
-            if (skills[index].area === 'frontend') {
-                dataSetsFrontend.push(skills[index].val);
-            } else {
-                dataSetsFrontend.push(0);
+        };
+
+        let size = 0;
+        for (let [label, dataset] of Object.entries(skills)) {
+            for (let [skill, value] of Object.entries(dataset.data)) {
+                size++;
             }
         }
-        console.log(labels);
-        console.log(dataSetsLanguages);
-        console.log(dataSetsFrontend);
 
-        const skillsGraph = document.getElementById('skills-graph');
-        new Chart(skillsGraph, {
-            type: 'radar',
-            data: {
-                labels: labels,
-                datasets: [
-                    {
-                        label: 'languages',
-                        data: dataSetsLanguages,
-                        fill: true,
-                        backgroundColor: 'rgba(255, 99, 132, 0.1)',
-                        borderColor: 'rgb(255, 99, 132)',
-                    },
-                    {
-                        label: 'frontend',
-                        data: dataSetsFrontend,
-                        fill: true,
-                        backgroundColor: 'rgba(132, 99, 255, 0.1)',
-                        borderColor: 'rgb(132, 99, 255)',
-                    }
-                ]
-            },
-            options:grapOptions
-        });
+        let areas = [];
+        let labels = [];
+        let datasets = [];
+        let dataindex = 0;
+        for (let [label, dataset] of Object.entries(skills)) {
+            let data = [];
+            areas.push(label);
+            for (let index = 0; index < size; index++) {
+                data.push(0);
+            }
 
+            // console.log(label, dataset);
+            for (let [skill, value] of Object.entries(dataset.data)) {
+                data[dataindex] = value;
+                labels.push(skill);
 
-        // let LanguageGraph = document.getElementById('languages-graph');
-        // new Chart(LanguageGraph, {
+                dataindex ++;
+            }
+
+            datasets.push({
+                label: label,
+                fill:true,
+                backgroundColor: dataset.backgroundColor,
+                borderColor: dataset.borderColor,
+                data: data
+            });
+        }
+        
+        // this.setState({ areas: areasOfSkill } ); 
+        // console.log(labels);
+        // console.log(datasets);
+        // console.log(areas);
+
+        // const skillsGraph = document.getElementById('skills-graph');
+        // new Chart(skillsGraph, {
         //     type: 'radar',
         //     data: {
-        //         labels: ['PHP', 'HTML', 'css', 'javascript', 'mysql'],
-        //         datasets: [
-        //             {
-        //                 label: 'Languages',
-        //                 data:[90, 99, 99, 70, 81],
-        //                 fill: true,
-        //                 backgroundColor: 'rgba(255, 99, 132, 0.1)',
-        //                 borderColor: 'rgb(255, 99, 132)',
-        //             }
-        //         ]
+        //         labels: labels,
+        //         datasets: datasets
         //     },
         //     options:grapOptions
         // });
-
-        // let frontendGraph = document.getElementById('frontend-graph');
-        // new Chart(frontendGraph, {
-        //     type: 'radar',
-        //     data: {
-        //         labels: ['VueJS', 'ReactJS', 'Bootstrap', 'jquery'],
-        //         datasets: [
-        //             {
-        //                 label: 'Frontend',
-        //                 data:[60, 60, 95, 95],
-        //                 fill: true,
-        //                 backgroundColor: 'rgba(132, 99, 255, 0.1)',
-        //                 borderColor: 'rgb(132, 99, 255)',
-        //             }
-        //         ]
-        //     },
-        //     options:grapOptions
-        // });
-
     }
 
     render() {
+        console.log('areas');
         return (
-            <div className="graph">         
+            <div className="graph">
+                {/* {areas.map(area => <a href="" className=""> {area} </a>)} */}
                 <canvas id="skills-graph" width="400" height="400"></canvas>
             </div>
         );
