@@ -1,3 +1,8 @@
+$_color_darkest: #30353e;
+$_color_text: #efefef;
+$_color_link: #efefef;
+
+
 html {
     box-sizing: border-box;
 }
@@ -7,6 +12,8 @@ html {
 
 body{
     margin: 0;
+    background-color: $_color_darkest;
+    color: $_color_text;
 }
 
 section{
@@ -19,4 +26,11 @@ section{
         max-width: 800px;
         margin: auto;
     }
+}
+
+
+a {
+    color: $_color_link;
+    text-decoration: none;
+    &:hover{}
 }

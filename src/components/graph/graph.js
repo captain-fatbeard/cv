@@ -19,7 +19,7 @@ export default class Graph extends React.Component {
                         'css': 99,
                     }
                 },
-                'Backend': {
+                'backend': {
                     'backgroundColor': 'rgba(255, 132, 99, 0.1)',
                     'borderColor': 'rgb(255, 132, 99)',
                     'data': {
@@ -40,6 +40,8 @@ export default class Graph extends React.Component {
                 }
             }
         }
+
+        this.handleClick = this.handleClick.bind(this);
     }
 
     componentWillMount() {
@@ -50,8 +52,12 @@ export default class Graph extends React.Component {
                     borderWidth: 2
                 }
             },
+            legend: {
+                display: false
+            },
             scale: {
                 ticks: {
+                    display: false,
                     beginAtZero: true,
                     callback: function(value, index, values) {
                         if (value % 20 === 0){
@@ -106,24 +112,33 @@ export default class Graph extends React.Component {
 
     componentDidMount() {
         const skillsGraph = document.getElementById('skills-graph');
-        // new Chart(skillsGraph, {
-        //     type: 'radar',
-        //     data: {
-        //         labels: this.labels,
-        //         datasets: this.datasets
-        //     },
-        //     options: this.grapOptions
-        // });
+        new Chart(skillsGraph, {
+            type: 'radar',
+            data: {
+                labels: this.labels,
+                datasets: this.datasets
+            },
+            options: this.grapOptions
+        });
+    }
+
+
+    handleClick() {
+        console.log('this is:', this);
+        this.setState(state => ({
+            isToggleOn: !state.isToggleOn
+        }));
     }
 
 
     render() {
-        // const areas = this.state.areasOfSkills.map((area, key) => 
-        //     <a key={key} href="">{area}</a>
-        // );
+        const areasLinks = this.state.areasOfSkills.map((area, key) => 
+            <a key={key} className="graph-link" href="#" onClick={this.handleClick}>{area} {this.state.isToggleOn ? 'ON' : 'OFF'}</a>
+        );
 
         return (
             <div className="graph">   
+                {areasLinks}
                 {/* {this.state.areasOfSkills.map((area, key) => <a className="graph-link" key={key} href="#">{area}</a>)} */}
                 <canvas id="skills-graph" width="400" height="400"></canvas>
             </div>
