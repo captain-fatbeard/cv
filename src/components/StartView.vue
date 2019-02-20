@@ -1,6 +1,5 @@
 <template>
-    <underlined-title title="artefact"/>
-    <!-- <h1>{{ title }}</h1> -->
+    <underlined-title title="JJ Larsen"/>
 </template>
 
 
@@ -11,9 +10,6 @@ export default {
     name: 'start-view',
     components: {
         UnderlinedTitle
-    },
-    props: {
-        title: String
     }
 }
 </script>

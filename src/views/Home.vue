@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="flex-center position-rel full-height">
-            <start-view title="artefact"/>
+            <start-view />
         </section>
         <section class="flex-center position-rel full-height">
             <div>
