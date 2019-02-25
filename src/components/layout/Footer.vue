@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer id="contact">
         <h2>THANKS!</h2>
         <h4>Want to chat about something?</h4>
 
@@ -14,7 +14,10 @@
 </template>
 
 <script>
-export default {
-    name: 'footer'
-}
+    export default {
+        name: "Footer"
+    };
 </script>
+
+<style lang="scss" scoped>
+</style>

@@ -1,14 +1,17 @@
 <template>
     <header class="header">
         <div class="nav">
-            <button>graph section</button>
-            <button>timeline</button>
+            <button v-scroll-to="'#graph'">graph section</button>
+            <button v-scroll-to="'#timeline'">timeline</button>
+            <button v-scroll-to="'#contact'">contact</button>
         </div>
     </header>
 </template>
 
 
 <script>
+    // import Chart from "chart.js";
+
     export default {
         name: "Header"
     };
@@ -27,7 +30,7 @@
                 background: none;
                 cursor: pointer;
                 border: none;
-                color: white;
+                color: $_color_text;
                 text-transform: uppercase;
             }
         }

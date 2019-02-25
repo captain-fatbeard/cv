@@ -205,7 +205,7 @@
 
     button{
         background: none;
-        color: white;
+        color: $_color_text;
         border: none;
         text-transform: uppercase;
         padding: 0 10px;

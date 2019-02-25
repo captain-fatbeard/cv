@@ -54,7 +54,6 @@
     $_color_main: #da4b4b;
     $_color_bg_odd: rgba(43, 43, 43, 0.6);
     $_color_bg_even: rgba(21, 21, 21, 0.6);
-    $_color_bg_body: #1d1d1d;
 
     .timeline {
         h2 {

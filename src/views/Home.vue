@@ -1,15 +1,15 @@
 <template>
     <div>
-        <section class="flex-center position-rel full-height">
+        <section id="start-view" class="flex-center position-rel full-height">
             <start-view />
         </section>
-        <section class="flex-center position-rel full-height">
+        <section id="timeline" class="flex-center position-rel full-height">
             <div>
                 <underlined-title title="timeline" />
                 <timeline />
             </div>
         </section>
-        <section class="flex-center position-rel full-height">
+        <section id="graph" class="flex-center position-rel full-height">
             <div>
                 <underlined-title title="Graph" />
                 <graph />
