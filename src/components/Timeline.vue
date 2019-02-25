@@ -51,12 +51,14 @@
 </script>
 
 <style lang="scss" scoped>
-    $_color_main: #da4b4b;
+    $_color_main: #ea2949;
     $_color_bg_odd: rgba(43, 43, 43, 0.6);
     $_color_bg_even: rgba(21, 21, 21, 0.6);
 
+    $line_width: 1px;
+
     .timeline {
-        margin: 0 0 200px 0;
+        margin: 40px 0 200px 0;
         h2 {
             display: block;
         }
@@ -72,9 +74,9 @@
                     position: absolute;
                     display: block;
                     left: 15px;
-                    width: 5px;
+                    width: $line_width;
                     height: 100%;
-                    border-left: 5px solid $_color_main;
+                    border-left: $line_width solid $_color_main;
                 }
                 &::after {
                     content: "";
@@ -83,17 +85,17 @@
                     top: 48px;
                     left: 20px;
                     right: 0;
-                    border-bottom: 5px solid $_color_main;
+                    border-bottom: $line_width solid $_color_main;
                 }
                 .circle {
                     position: absolute;
-                    left: 7px;
-                    top: 40px;
+                    left: 5px;
+                    top: 38px;
                     background-color: $_color_bg_body;
-                    border: 4px solid $_color_main;
+                    border: $line_width solid $_color_main;
                     z-index: 1;
-                    height: 22px;
-                    width: 22px;
+                    height: 20px;
+                    width: 20px;
                     border-radius: 50%;
                 }
             }
@@ -103,7 +105,7 @@
                 display: block;
                 position: relative;
                 border-radius: 10px;
-                padding: 5px 10px 10px 20px;
+                padding: $line_width 10px 10px 20px;
                 margin-bottom: 20px;
                 &::after {
                     content: "";

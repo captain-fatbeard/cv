@@ -6,9 +6,16 @@ body {
     color: #fff;
     font-family: "Nunito", sans-serif;
     font-weight: 200;
+    font-size: 14px;
     height: 100vh;
     margin: 0;
     width: 100%;
+}
+
+section{
+    max-width: 900px;
+    display: block;
+    margin: auto;
 }
 
 .full-height {

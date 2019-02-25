@@ -3,13 +3,14 @@
         <h2>THANKS!</h2>
         <h4>Want to chat about something?</h4>
 
-        <ul>
-            <li>fb</li>
-            <li>li</li>
-            <li>email</li>
-        </ul>
 
-        <p>Made with vuejs - © Jacob Juul Larsen</p>
+
+        <a><img class="icon facebook" src="@/assets/images/icon-facebook.svg"></a>
+        <a href="https://www.linkedin.com/in/larsenjacob/" target="_blank"><img class="icon linkedin" src="@/assets/images/icon-linkedin.svg"></a>
+        <a href="mailto:jacoblarsen86@live.com" target="_blank"><img class="icon email" src="@/assets/images/icon-envelope.svg"></a>
+
+        <!-- <p>Made with vuejs - © Jacob Juul Larsen</p> -->
+        <p>© Jacob Juul Larsen</p>
     </footer>
 </template>
 
@@ -24,11 +25,13 @@
         background-color: $_color_bg_footer;
         text-align: center;
         padding: $global_padding;
-        ul{
-            list-style: none;
-            li{
-                display: inline;
-                margin: 10px;
+        a{
+            margin: 10px;
+            display: inline-block;
+            color: white;
+            font-size: 20px;
+            img{
+                height: 30px;
             }
         }
     }
