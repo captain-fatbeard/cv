@@ -20,4 +20,16 @@
 </script>
 
 <style lang="scss" scoped>
+    footer{
+        background-color: $_color_bg_footer;
+        text-align: center;
+        padding: $global_padding;
+        ul{
+            list-style: none;
+            li{
+                display: inline;
+                margin: 10px;
+            }
+        }
+    }
 </style>

@@ -56,6 +56,7 @@
     $_color_bg_even: rgba(21, 21, 21, 0.6);
 
     .timeline {
+        margin: 0 0 200px 0;
         h2 {
             display: block;
         }

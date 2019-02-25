@@ -1,8 +1,8 @@
 <template>
     <header class="header">
         <div class="nav">
-            <button v-scroll-to="'#graph'">graph section</button>
-            <button v-scroll-to="'#timeline'">timeline</button>
+            <button v-scroll-to="'#skills'">skills</button>
+            <button v-scroll-to="'#work'">work</button>
             <button v-scroll-to="'#contact'">contact</button>
         </div>
     </header>
@@ -20,7 +20,8 @@
 
 <style lang="scss" scoped>
     header{
-        position: absolute;
+        background-color: $_color_bg_header;
+        position: fixed;
         width: 100%;
 
         .nav{

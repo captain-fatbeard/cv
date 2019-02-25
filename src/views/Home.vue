@@ -3,15 +3,15 @@
         <section id="start-view" class="flex-center position-rel full-height">
             <start-view />
         </section>
-        <section id="timeline" class="flex-center position-rel full-height">
+        <section id="work" class="">
             <div>
-                <underlined-title title="timeline" />
+                <underlined-title title="Work" />
                 <timeline />
             </div>
         </section>
-        <section id="graph" class="flex-center position-rel full-height">
+        <section id="skills" class="flex-center position-rel full-height">
             <div>
-                <underlined-title title="Graph" />
+                <underlined-title title="Skills" />
                 <graph />
             </div>
         </section>
