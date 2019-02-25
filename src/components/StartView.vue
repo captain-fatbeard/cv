@@ -1,5 +1,5 @@
 <template>
-    <underlined-title title="JJ Larsen"/>
+    <underlined-title title="artefact"/>
 </template>
 
 

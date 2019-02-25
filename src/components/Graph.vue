@@ -154,13 +154,20 @@
                 elements: {
                     line: {
                         tension: 0,
-                        borderWidth: 2
+                        borderWidth: 2,
+                        color: 'red',
                     }
                 },
                 legend: {
-                    display: false
+                    display: false,
                 },
                 scale: {
+                    pointLabels: {
+                        fontColor: '#fff',
+                    },
+                    gridLines: {
+                        color: '#636363',
+                    },
                     ticks: {
                         display: false,
                         beginAtZero: true,
@@ -196,13 +203,11 @@
         max-width: 100%;
     }
 
-
     button{
         background: none;
         color: white;
         border: none;
         text-transform: uppercase;
-        /* font-size: 20px; */
         padding: 0 10px;
         margin: 10px;
         cursor: pointer;

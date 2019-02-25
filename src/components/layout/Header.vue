@@ -1,8 +1,8 @@
 <template>
     <header class="header">
-        <h1>app navn og logo</h1>
-        <div id="nav">
+        <div class="nav">
             <button>graph section</button>
+            <button>timeline</button>
         </div>
     </header>
 </template>
@@ -14,19 +14,25 @@
     };
 </script>
 
-<style scoped>
+
+<style lang="scss" scoped>
     header{
         position: absolute;
         width: 100%;
 
+        .nav{
+            padding: 10px;
+            float: right;
+            button{
+                background: none;
+                cursor: pointer;
+                border: none;
+                color: white;
+                text-transform: uppercase;
+            }
+        }
+
     }
 
-    button{
-        background: none;
-        cursor: pointer;
-        border: none;
-        color: white;
-        text-transform: uppercase;
-    }
 </style>
 
