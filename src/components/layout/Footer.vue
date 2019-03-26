@@ -2,14 +2,9 @@
     <footer id="contact">
         <h2>THANKS!</h2>
         <h4>Want to chat about something?</h4>
-
-
-
         <a><img class="icon facebook" src="@/assets/images/icon-facebook.svg"></a>
         <a href="https://www.linkedin.com/in/larsenjacob/" target="_blank"><img class="icon linkedin" src="@/assets/images/icon-linkedin.svg"></a>
         <a href="mailto:jacoblarsen86@live.com" target="_blank"><img class="icon email" src="@/assets/images/icon-envelope.svg"></a>
-
-        <!-- <p>Made with vuejs - © Jacob Juul Larsen</p> -->
         <p>© Jacob Juul Larsen</p>
     </footer>
 </template>

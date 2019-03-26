@@ -13,7 +13,6 @@
         </div>
 
         <canvas id="skills-graph" width="400" height="400"></canvas>
-        <!-- {{skills}} -->
     </div>
 </template>
 

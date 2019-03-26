@@ -1,6 +1,5 @@
 <template>
     <div class="timeline">
-        <!-- <h2>work</h2> -->
         <div class="item">
             <div class="heading">
                 <span class="circle"></span>

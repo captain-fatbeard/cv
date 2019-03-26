@@ -24,6 +24,5 @@ export default {
             height: 4px;
             background: linear-gradient(to left, rgba(125,185,232,0) 0%,rgba(234,46,78,1) 100%);
         }
-
     }
 </style>
