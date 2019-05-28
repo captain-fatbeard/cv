@@ -3,16 +3,16 @@
         <section id="start-view" class="flex-center position-rel full-height">
             <start-view />
         </section>
-        <section id="work" class="">
-            <div>
-                <underlined-title title="Work" />
-                <timeline />
-            </div>
-        </section>
         <section id="skills" class="flex-center position-rel full-height">
             <div>
                 <underlined-title title="Skills" />
                 <graph />
+            </div>
+        </section>
+        <section id="work" class="">
+            <div>
+                <underlined-title title="Work" />
+                <timeline />
             </div>
         </section>
     </div>
