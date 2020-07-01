@@ -22,7 +22,7 @@
                     {
                         year: '2020',
                         title: 'Ambition',
-                        text:  'Lorem ipsum dolor sit amet, ad ullum veniam nominati sea. Dicat probatus concludaturque sea ne. Usu indoctum consetetur scriptorem at, porro mundi eam id. Has sensibus inciderint ex, commodo philosophia mediocritatem eam ex, nisl quando audire an eam.'
+                        text:  'Lorem ipsum test dolor sit amet, ad ullum veniam nominati sea. Dicat probatus concludaturque sea ne. Usu indoctum consetetur scriptorem at, porro mundi eam id. Has sensibus inciderint ex, commodo philosophia mediocritatem eam ex, nisl quando audire an eam.'
                     },
                     {
                         year: '2015 - 2019',
