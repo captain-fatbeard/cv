@@ -1,8 +1,9 @@
 <template>
     <header class="header">
         <div class="nav">
-            <button v-scroll-to="'#work'">work</button>
+            <button v-scroll-to="'#bio'">about</button>
             <button v-scroll-to="'#skills'">skills</button>
+            <button v-scroll-to="'#work'">work</button>
             <button v-scroll-to="'#contact'">contact</button>
         </div>
     </header>
@@ -21,6 +22,7 @@
         background-color: $_color_bg_header;
         position: fixed;
         width: 100%;
+        z-index: 1;
 
         .nav{
             padding: 10px;

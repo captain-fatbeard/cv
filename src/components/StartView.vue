@@ -1,5 +1,5 @@
 <template>
-    <underlined-title title="Larsen"/>
+    <underlined-title title="Jacob Juul Larsen"/>
 </template>
 
 

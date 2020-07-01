@@ -1,43 +1,13 @@
 <template>
     <div class="timeline">
-        <div class="item">
+        <div class="item" v-for="(item, index) in timeline" :key="index">
             <div class="heading">
                 <span class="circle"></span>
-                2015 - 2019
+                 {{ item.year }}
             </div>
             <div class="body">
-                <h2>Lorem</h2>
-                <p>Lorem ipsum dolor sit amet, ad ullum veniam nominati sea. Dicat probatus concludaturque sea ne. Usu indoctum consetetur scriptorem at, porro mundi eam id. Has sensibus inciderint ex, commodo philosophia mediocritatem eam ex, nisl quando audire an eam.</p>
-            </div>
-        </div>
-        <div class="item">
-            <div class="heading">
-                <span class="circle"></span>
-                2013 - 2015
-            </div>
-            <div class="body">
-                <h2>In feugait</h2>
-                <p>In feugait recusabo vis, ex has tota omnes inciderint, debitis facilisi platonem ne nam. Expetenda principes id usu. At denique eligendi detraxit est, ad facilis qualisque suscipiantur sea. Viris feugiat ad duo, cum cu iudico option. Eruditi evertitur id his.</p>
-            </div>
-        </div>
-        <div class="item">
-            <div class="heading">
-                <span class="circle"></span>
-                2012
-            </div>
-            <div class="body">
-                <h2>Odio</h2>
-                <p>Odio aliquip vivendum nam ad, duo iisque indoctum ad, cu ornatus dolorum qui. Ad quo viris sapientem deseruisse, in paulo menandri nec. Periculis signiferumque mea ea, sonet definitiones qui eu. Ad malis paulo dolore sea. Adhuc comprehensam at cum. No maiorum tractatos conclusionemque duo, solum invidunt ut vim.</p>
-            </div>
-        </div>
-        <div class="item">
-            <div class="heading">
-                <span class="circle"></span>
-                2011
-            </div>
-            <div class="body">
-                <h2>Ut pro fuisset</h2>
-                <p>Ut pro fuisset singulis dissentiet, ei sadipscing scriptorem eum. Et mel utroque euripidis. Ut nec mandamus sapientem quaerendum, vim ne option assentior, etiam gloriatur at pri. Ei minim evertitur nam, at pri dicunt ornatus.</p>
+                <h2>{{ item.title }}</h2>
+                <p>{{ item.text }}</p>
             </div>
         </div>
     </div>
@@ -45,7 +15,38 @@
 
 <script>
     export default {
-        name: "timeline"
+        name: "timeline",
+        data() {
+            return{
+                timeline: [
+                    {
+                        year: '2020',
+                        title: 'Ambition',
+                        text:  'Lorem ipsum dolor sit amet, ad ullum veniam nominati sea. Dicat probatus concludaturque sea ne. Usu indoctum consetetur scriptorem at, porro mundi eam id. Has sensibus inciderint ex, commodo philosophia mediocritatem eam ex, nisl quando audire an eam.'
+                    },
+                    {
+                        year: '2015 - 2019',
+                        title: 'Netbooster / Artefact',
+                        text:  'Lorem ipsum dolor sit amet, ad ullum veniam nominati sea. Dicat probatus concludaturque sea ne. Usu indoctum consetetur scriptorem at, porro mundi eam id. Has sensibus inciderint ex, commodo philosophia mediocritatem eam ex, nisl quando audire an eam.'
+                    },
+                    {
+                        year: '2013 - 2015',
+                        title: 'Designheroes',
+                        text:  'Lorem ipsum dolor sit amet, ad ullum veniam nominati sea. Dicat probatus concludaturque sea ne. Usu indoctum consetetur scriptorem at, porro mundi eam id. Has sensibus inciderint ex, commodo philosophia mediocritatem eam ex, nisl quando audire an eam.'
+                    },
+                    {
+                        year: '2012',
+                        title: 'Rete-Moto / Heroes & Generals',
+                        text:  'Web-programming & forum maintenance. Started as 2 month internship.'
+                    },
+                    {
+                        year: '2011',
+                        title: 'AmPd',
+                        text:  'Web development ,design and programmingin in HTML5/CSS3.'
+                    }
+                ]
+            }
+        }
     };
 </script>
 
