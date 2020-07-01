@@ -1,6 +1,6 @@
 module.exports = {
     outputDir: 'docs',
-    publicPath: process.env.NODE_ENV === 'production' ? '/cv' : '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/cv/' : '/',
 
     css: {
         loaderOptions: {
@@ -11,14 +11,15 @@ module.exports = {
                 `
             }
         }
-    },
-    configureWebpack: {
-        performance: {
-            hints: 'warning', // enum
-            maxAssetSize: 1048576, // int (in bytes),
-            maxEntrypointSize: 1048576, // int (in bytes)
-        }
     }
+    
+    // configureWebpack: {
+    //     performance: {
+    //         hints: 'warning', // enum
+    //         maxAssetSize: 1048576, // int (in bytes),
+    //         maxEntrypointSize: 1048576, // int (in bytes)
+    //     }
+    // }
 }
 
 
