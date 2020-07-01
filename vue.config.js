@@ -13,11 +13,10 @@ module.exports = {
         }
     },
     configureWebpack: {
-        optimization: {
-            splitChunks: {
-                minSize: 10000,
-                maxSize: 250000,
-            }
+        performance: {
+            hints: 'warning', // enum
+            maxAssetSize: 1048576, // int (in bytes),
+            maxEntrypointSize: 1048576, // int (in bytes)
         }
     }
 }
