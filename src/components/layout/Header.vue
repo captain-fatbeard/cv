@@ -1,10 +1,18 @@
 <template>
     <header class="header">
         <div class="nav">
-            <button v-scroll-to="'#bio'">about</button>
-            <button v-scroll-to="'#skills'">skills</button>
-            <button v-scroll-to="'#work'">work</button>
-            <button v-scroll-to="'#contact'">contact</button>
+
+            <scrollactive>
+                <!-- <a href="#home" class="scrollactive-item">Home</a>
+                <a href="#about-us" class="scrollactive-item">About Us</a>
+                <a href="#portfolio" class="scrollactive-item">Portfolio</a>
+                <a href="#contact" class="scrollactive-item">Contact</a> -->
+
+                <a href="#bio" class="scrollactive-item" v-scroll-to="'#bio'">about</a>
+                <a href="#skills" class="scrollactive-item" v-scroll-to="'#skills'">skills</a>
+                <a href="#work" class="scrollactive-item" v-scroll-to="'#work'">work</a>
+                <a href="#contact" class="scrollactive-item" v-scroll-to="'#contact'">contact</a>
+            </scrollactive>
         </div>
     </header>
 </template>
@@ -27,12 +35,23 @@
         .nav{
             padding: 10px;
             float: right;
-            button{
+            a{
                 background: none;
                 cursor: pointer;
                 border: none;
                 color: $_color_text;
                 text-transform: uppercase;
+                text-decoration: none;
+                padding: 5px 10px;
+                transition: background-color 0.5s ease;
+
+                &:hover {
+                    background-color: $_color_bg_footer;
+                }
+
+                &.is-active{
+                    background-color: $_color_bg_footer;
+                }
             }
         }
     }

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 
 import VueScrollTo from 'vue-scrollto';
+import VueScrollactive from 'vue-scrollactive';
 
 // You can also pass in the default options
 Vue.use(VueScrollTo, {
@@ -18,6 +19,7 @@ Vue.use(VueScrollTo, {
     x: false,
     y: true
 })
+Vue.use(VueScrollactive);
 
 
 Vue.use(Router)
