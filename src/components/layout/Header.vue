@@ -43,14 +43,16 @@
                 text-transform: uppercase;
                 text-decoration: none;
                 padding: 5px 10px;
-                transition: background-color 0.5s ease;
+                transition: all 0.5s ease;
 
                 &:hover {
                     background-color: $_color_bg_footer;
+                    color: $_color_bg_body;
                 }
 
                 &.is-active{
                     background-color: $_color_bg_footer;
+                    color: $_color_bg_body;
                 }
             }
         }

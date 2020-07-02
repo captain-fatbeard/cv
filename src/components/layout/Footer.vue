@@ -20,10 +20,11 @@
         background-color: $_color_bg_footer;
         text-align: center;
         padding: $global_padding;
+        color: $_color_bg_body;
         a{
             margin: 10px;
             display: inline-block;
-            color: white;
+            color: $_color_bg_body;
             font-size: 20px;
             img{
                 height: 30px;

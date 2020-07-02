@@ -1,21 +1,15 @@
 <template>
-    <underlined-title title="Jacob Juul Larsen"/>
+    <logo />
 </template>
 
 
 <script>
-import UnderlinedTitle from '@/components/UnderlinedTitle';
+import Logo from '@/components/Logo';
 
 export default {
     name: 'start-view',
     components: {
-        UnderlinedTitle
+        Logo
     }
 }
 </script>
-
-<style lang="scss" scoped>
-    h2{
-        text-transform: uppercase;
-    }
-</style>

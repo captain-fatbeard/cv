@@ -162,7 +162,7 @@
                 },
                 scale: {
                     pointLabels: {
-                        fontColor: '#fff',
+                        fontColor: '#000',
                     },
                     gridLines: {
                         color: '#636363',
@@ -170,19 +170,9 @@
                     ticks: {
                         display: false,
                         beginAtZero: true,
-                        // callback(value, index, values) {
-                        //     if (value % 20 === 0) {
-                        //         return value;
-                        //     } else {
-                        //         return "";
-                        //     }
-                        // }
                     }
                 }
             };
-
-            // console.log(this.makeGraphData);
-            // console.log(this.makeGraphData.labels);
 
             this.graph = new Chart(document.getElementById("skills-graph"), {
                 type: "radar",
@@ -198,8 +188,9 @@
 
 <style lang="scss" scoped>
     canvas{
-        max-height: 100%;
-        max-width: 100%;
+        max-height: 600px;
+        max-width: 600px;
+        margin: auto;
     }
 
     button{
