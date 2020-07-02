@@ -11,7 +11,7 @@
         text-align: left;
         h1 {
             margin: 0;
-            font-size: 40px;
+            font-size: 25px;
             font-weight: 900;
             position: relative;
             line-height: 1;

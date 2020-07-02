@@ -188,6 +188,8 @@
 
 <style lang="scss" scoped>
     canvas{
+        height: 90% !important;
+        width: 90% !important;
         max-height: 600px;
         max-width: 600px;
         margin: auto;

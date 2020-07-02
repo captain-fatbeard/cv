@@ -10,6 +10,16 @@ body {
     font-size: 14px;
     height: 100vh;
     margin: 0;
+    padding: 0px;
+    width: 100%;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box
+}
+
+#app {
     width: 100%;
 }
 
